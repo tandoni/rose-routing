@@ -1,8 +1,13 @@
 <!--The whole content below can be removed with the new code.-->
 <md-toolbar color="primary">
   Rose Routing
+  <span fxFlex></span>
+  <a md-button type="button" [routerLink]="['/home']" routerLinkActive="active">
+    <md-icon>home</md-icon>
+  </a>
+  <a md-button type="button" [routerLink]="['/signin']" routerLinkActive="active">Sign In</a>
 </md-toolbar>
-<button type="button" [routerLink]="['/home']">Home</button>
-<button type="button" [routerLink]="['/signin']">Sign In</button>
 
-<router-outlet></router-outlet>
+<md-card>
+  <router-outlet></router-outlet>
+</md-card>
