@@ -5,3 +5,8 @@
 md-card {
     margin: 50px;
 }
+
+button[md-menu-item].active {
+    font-weight: bold;
+    background-color: lightgray;
+}
